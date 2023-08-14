@@ -1,0 +1,36 @@
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username" : "test1",
+    "password" : "test123",
+    "name" : "because i am required"
+}
+
+####
+#change password
+POST http://localhost:3000/auth/changepass
+Content-Type: application/json
+
+{
+    "password": "test1234"
+}
+
+####
+#login 
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "test1",
+    "password": "test1234"
+}
+
+####
+#get blogs 
+GET http://localhost:3000/blogs/blog
+
+####
+#get myblogs 
+GET http://localhost:3000/blogs/myblogs
