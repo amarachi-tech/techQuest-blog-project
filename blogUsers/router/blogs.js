@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router()
 
-const { getAllBlogs, getABlog, updateAblog, createABlog, getMyBlogs } = require("../userCotroller/blogControllers");
+const { getAllBlogs, getABlog, updateAblog, createABlog, getMyBlogs } = require("../Cotroller/blogControllers");
 const { isAuthorized } = require("../../middleware/authorization");
 
 
